@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Samikshya Pattanaik — Portfolio</title>
+  <meta name="description" content="Portfolio of Samikshya Pattanaik — MCA Student & Software Developer" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app" class="theme-root">
+
+<!-- NAV -->
+<nav class="nav" role="navigation">
+  <div class="nav-inner container">
+    <div class="brand">Samikshya Pattanaik</div>
+
+    <div class="nav-links desktop">
+      <button class="nav-btn" data-target="home">Home</button>
+      <button class="nav-btn" data-target="about">About</button>
+      <button class="nav-btn" data-target="skills">Skills</button>
+      <button class="nav-btn" data-target="projects">Projects</button>
+      <button class="nav-btn" data-target="contact">Contact</button>
+    </div>
+
+    <button id="menuToggle" class="icon-btn mobile-only" aria-expanded="false" aria-label="Toggle menu">
+      ☰
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <button class="mobile-link" data-target="home">Home</button>
+    <button class="mobile-link" data-target="about">About</button>
+    <button class="mobile-link" data-target="skills">Skills</button>
+    <button class="mobile-link" data-target="projects">Projects</button>
+    <button class="mobile-link" data-target="contact">Contact</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" class="section hero scroll-offset">
+  <div class="hero-grid-bg"></div>
+  
+
+  <div class="container hero-inner scroll-animate">
+    <div class="orb-wrap animate-float animate-glow">💻</div>
+
+    <h1 class="hero-title">Building <span class="accent">Reliable</span><br/>Software Solutions</h1>
+    <p class="hero-name">Samikshya Pattanaik</p>
+   <p class="hero-sub">
+Software Developer | Java & Full-Stack Enthusiast
+</p>
+
+
+    <div class="hero-ctas">
+      <button class="btn primary" data-target="projects">View Projects</button>
+      <button class="btn outline" data-target="contact">Contact Me</button>
+    </div>
+  </div>
+
+  <div class="chev-down">⌄</div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section scroll-offset">
+  <div class="container scroll-animate">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="two-col gap-lg">
+      <div class="about-text">
+        <p>
+          I am an MCA student with a strong foundation in core computer science
+          concepts including Data Structures, Algorithms, DBMS, Object-Oriented
+          Programming, and Computer Networks.
+        </p>
+        <p>
+          I have hands-on experience working with Java, Python, SQL, and building
+          backend and full-stack applications. I enjoy problem-solving, logical
+          thinking, and continuously learning through real-world projects.
+        </p>
+
+        <div class="badge-row">
+          <span class="badge">Java Developer</span>
+          <span class="badge">Full-Stack</span>
+          <span class="badge">Backend</span>
+          <span class="badge">Data Analytics</span>
+        </div>
+      </div>
+
+      <div class="about-cards">
+        <article class="card tech-card">
+          <div class="card-body">
+            <div class="icon-box">☕</div>
+            <div>
+              <h3>Backend Development</h3>
+              <p class="muted">Java, JDBC, Spring Boot, REST APIs</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card tech-card">
+          <div class="card-body">
+            <div class="icon-box">📊</div>
+            <div>
+              <h3>Data & Analytics</h3>
+              <p class="muted">Python, SQL, Data Analysis, ML Basics</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section alt-bg scroll-offset">
+  <div class="container scroll-animate">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card"><div class="skill-icon">☕</div><h4>Java</h4><p class="muted">Core, OOP, JDBC</p></div>
+      <div class="skill-card"><div class="skill-icon">🐍</div><h4>Python</h4><p class="muted">Data Analysis, ML</p></div>
+      <div class="skill-card"><div class="skill-icon">🗄️</div><h4>SQL</h4><p class="muted">MySQL, DBMS</p></div>
+      <div class="skill-card"><div class="skill-icon">⚙️</div><h4>Spring Boot</h4><p class="muted">REST APIs</p></div>
+      <div class="skill-card"><div class="skill-icon">🌐</div><h4>Web</h4><p class="muted">HTML, CSS, JavaScript</p></div>
+      <div class="skill-card"><div class="skill-icon">🧠</div><h4>Core CS</h4><p class="muted">DSA, OOP, CN</p></div>
+      <div class="skill-card"><div class="skill-icon">🌳</div><h4>Tools</h4><p class="muted">Git, GitHub, VS Code</p></div>
+      <div class="skill-card"><div class="skill-icon">🛠️</div><h4>Platforms</h4><p class="muted">MySQL Workbench, IntelliJ</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section scroll-offset">
+  <div class="container scroll-animate">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+      <article class="card project-card">
+        <div class="project-header">
+          <div class="project-icon">🛒</div>
+          <h3>E‑Commerce Application</h3>
+        </div>
+        <p class="muted">Full‑stack web application with product browsing, cart management, and secure orders.</p>
+        <div class="meta"><strong>Tech:</strong> <span class="pill">Angular</span><span class="pill">Spring Boot</span><span class="pill">MySQL</span></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-header">
+          <div class="project-icon">🏥</div>
+          <h3>Hospital Management System</h3>
+        </div>
+        <p class="muted">Java Swing desktop system for patients, doctors, appointments, and billing.</p>
+        <div class="meta"><strong>Tech:</strong> <span class="pill">Java</span><span class="pill">JDBC</span><span class="pill">MySQL</span></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-header">
+          <div class="project-icon">📈</div>
+          <h3>Stock Price Prediction</h3>
+        </div>
+        <p class="muted">Machine learning project using regression and data visualization.</p>
+        <div class="meta"><strong>Tech:</strong> <span class="pill">Python</span><span class="pill">ML</span></div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-header">
+          <div class="project-icon">🌸</div>
+          <h3>Online Flower Shop – Sales Analytics</h3>
+        </div>
+        <p class="muted">
+          Data analysis project to identify monthly and seasonal sales trends.
+        </p>
+        <div class="meta">
+          <strong>Tech:</strong>
+          <span class="pill">Python</span>
+          <span class="pill">Data Analysis</span>
+        </div>
+      </article>
+
+      <article class="card project-card">
+        <div class="project-header">
+          <div class="project-icon">🎟️</div>
+          <h3>Event Management Website</h3>
+        </div>
+        <p class="muted">Responsive event registration website with clean UI.</p>
+        <div class="meta"><strong>Tech:</strong> <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- INTERNSHIP -->
+<section id="internship" class="section alt-bg scroll-offset">
+  <div class="container">
+    <h2 class="section-title">Internship & Training</h2>
+
+    <article class="card">
+      <h3>SAP Intern — OSDA</h3>
+      <p class="muted">Sep 2025 – Nov 2025</p>
+      <p>
+        Gained exposure to SAP systems and enterprise workflows with certification.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>GenAI Powered Data Analytics</h3>
+      <p class="muted">Forage Virtual Job Simulation | Nov 2025</p>
+      <p>
+        Worked on data analytics tasks using AI-driven insights.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section alt-bg scroll-offset">
+  <div class="container scroll-animate">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="two-col gap-lg">
+      <article class="contact-card">
+        <h3>Get In Touch</h3>
+        <p class="muted">Open to internships, projects, and collaborations.</p>
+        <div class="contact-list">
+          <div class="contact-row"><span class="contact-icon">✉️</span><a href="mailto:psamikshya41@gmail.com">psamikshya41@gmail.com</a></div>
+          <div class="contact-row"><span class="contact-icon">📞</span><a href="tel:+919861249399">+91 98612 49399</a></div>
+        </div>
+      </article>
+
+      <article class="contact-card">
+        <h3>Online Profiles</h3>
+        <a class="list-link" href="https://www.linkedin.com/in/samikshya-pattanaik-715b7b317/" target="_blank">
+          <div class="list-mid"><div class="strong">LinkedIn</div><div class="small muted">Professional Profile</div></div>
+        </a>
+        <a class="list-link" href="https://github.com/Samikshya981" target="_blank">
+          <div class="list-mid"><div class="strong">GitHub</div><div class="small muted">Project Repositories</div></div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <h4>Samikshya Pattanaik</h4>
+    <p class="muted">MCA Student & Software Developer</p>
+
+    <div class="socials">
+      <a href="mailto:psamikshya41@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/samikshya-pattanaik-715b76317/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Samikshya981" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <div class="container copyright">© <span id="year"></span> Samikshya Pattanaik</div>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
