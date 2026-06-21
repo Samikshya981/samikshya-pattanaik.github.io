@@ -129,13 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Make header constant for skills, projects, contact
-      const nav = document.querySelector('.nav');
-      if (navKey === 'skills' || navKey === 'projects' || navKey === 'contact') {
-        nav.classList.add('fixed-nav');
-      } else {
-        nav.classList.remove('fixed-nav');
-      }
+      // Scroll states are managed via scroll listener
     }, observerOptions);
 
     animatedEls.forEach((el) => observer.observe(el));
@@ -144,6 +138,22 @@ document.addEventListener("DOMContentLoaded", () => {
     document
       .querySelectorAll(".scroll-animate")
       .forEach((el) => el.classList.add("visible"));
+  }
+
+  // navbar scroll shadow/glow trigger
+  const nav = document.querySelector(".nav");
+  if (nav) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        nav.classList.add("fixed-nav");
+      } else {
+        nav.classList.remove("fixed-nav");
+      }
+    });
+    // Run once on load
+    if (window.scrollY > 50) {
+      nav.classList.add("fixed-nav");
+    }
   }
 
   // respect reduced-motion

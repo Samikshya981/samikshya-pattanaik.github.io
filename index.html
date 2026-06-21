@@ -6,8 +6,9 @@
   <title>Samikshya Pattanaik — Portfolio</title>
   <meta name="description" content="Portfolio of Samikshya Pattanaik — MCA Student & Software Developer" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -44,17 +45,19 @@
 <!-- HERO -->
 <header id="hero" class="section hero scroll-offset">
   <div class="hero-grid-bg"></div>
-  
+  <div class="glow-blob blob-1"></div>
+  <div class="glow-blob blob-2"></div>
 
   <div class="container hero-inner scroll-animate">
-    <div class="orb-wrap animate-float animate-glow">💻</div>
+    <div class="orb-wrap animate-float animate-glow">
+      <div class="orb-inner">💻</div>
+    </div>
 
     <h1 class="hero-title">Building <span class="accent">Reliable</span><br/>Software Solutions</h1>
     <p class="hero-name">Samikshya Pattanaik</p>
-   <p class="hero-sub">
-Software Developer | Java & Full-Stack Enthusiast
-</p>
-
+    <p class="hero-sub">
+      Software Developer | Java & Full-Stack Enthusiast
+    </p>
 
     <div class="hero-ctas">
       <button class="btn primary" data-target="projects">View Projects</button>
@@ -147,15 +150,17 @@ Software Developer | Java & Full-Stack Enthusiast
           <div class="project-icon">🛒</div>
           <h3>E‑Commerce Application</h3>
         </div>
-        <p class="muted">Full‑stack web application with product browsing, cart management, and secure orders.</p>
+        <p class="muted">A full-stack web application featuring seamless integration of an Angular frontend with a robust Spring Boot backend, supporting secure orders, product browsing, and cart management.</p>
         <div class="meta"><strong>Tech:</strong> <span class="pill">Angular</span><span class="pill">Spring Boot</span><span class="pill">MySQL</span></div>
         <div class="project-links">
-        <a href="https://github.com/Samikshya981/Ecommerce-spring-boot-angular-project.git"
-       target="_blank"
-       class="project-link">
-       View on GitHub
-      </a>
-      </div>
+          <a href="https://github.com/Samikshya981/Ecommerce-spring-boot-angular-project.git"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="project-link">
+            <span>View on GitHub</span>
+            <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
       </article>
 
       <article class="card project-card">
@@ -163,52 +168,34 @@ Software Developer | Java & Full-Stack Enthusiast
           <div class="project-icon">🏥</div>
           <h3>Hospital Management System</h3>
         </div>
-        <p class="muted">Java Swing desktop system for patients, doctors, appointments, and billing.</p>
+        <p class="muted">Java Swing desktop system for managing patient records, doctor allocations, appointment bookings, and automated billing generation.</p>
         <div class="meta"><strong>Tech:</strong> <span class="pill">Java</span><span class="pill">JDBC</span><span class="pill">MySQL</span></div>
-        <div class="project-link">
+        <div class="project-links">
           <a href="https://github.com/Pratik-943/MCA_Java_Project_Hospital_Management_System.git"
-          target="_blank"
-          class="project-link">
-          View on GitHub
-        </a>
+             target="_blank"
+             rel="noopener noreferrer"
+             class="project-link">
+            <span>View on GitHub</span>
+            <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
         </div>
       </article>
-
-      <!-- <article class="card project-card">
-        <div class="project-header">
-          <div class="project-icon">📈</div>
-          <h3>Stock Price Prediction</h3>
-        </div>
-        <p class="muted">Machine learning project using regression and data visualization.</p>
-        <div class="meta"><strong>Tech:</strong> <span class="pill">Python</span><span class="pill">ML</span></div>
-         <div class="project-link">
-          <a href="https://github.com/Pratik-943/MCA_Java_Project_Hospital_Management_System.git"
-          target="_blank"
-          class="project-link">
-          View on GitHub
-        </a> 
-      </div>
-      </article>-->
 
       <article class="card project-card">
         <div class="project-header">
           <div class="project-icon">🌸</div>
-          <h3>Online Flower Shop – Sales Analytics</h3>
+          <h3>Flower Shop Analytics</h3>
         </div>
-        <p class="muted">
-          Data analysis project to identify monthly and seasonal sales trends.
-        </p>
-        <div class="meta">
-          <strong>Tech:</strong>
-          <span class="pill">Python</span>
-          <span class="pill">Data Analysis</span>
-        </div>
-        <div class="project-link">
+        <p class="muted">Data analysis project identifying monthly and seasonal sales trends, customer behavior, and inventory insights using visual dashboards.</p>
+        <div class="meta"><strong>Tech:</strong> <span class="pill">Python</span><span class="pill">Data Analysis</span></div>
+        <div class="project-links">
           <a href="https://github.com/Samikshya981/flower-shop-data-visualization.git"
-          target="_blank"
-          class="project-link">
-          View on GitHub
-        </a>
+             target="_blank"
+             rel="noopener noreferrer"
+             class="project-link">
+            <span>View on GitHub</span>
+            <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
         </div>
       </article>
 
@@ -217,14 +204,16 @@ Software Developer | Java & Full-Stack Enthusiast
           <div class="project-icon">🎟️</div>
           <h3>Event Management Website</h3>
         </div>
-        <p class="muted">Responsive event registration website with clean UI.</p>
+        <p class="muted">Responsive event registration website with clean UI layouts, structured forms, and interactive user flows.</p>
         <div class="meta"><strong>Tech:</strong> <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
-        <div class="project-link">
+        <div class="project-links">
           <a href="https://github.com/Samikshya981/Event-Management.git"
-          target="_blank"
-          class="project-link">
-          View on GitHub
-        </a>
+             target="_blank"
+             rel="noopener noreferrer"
+             class="project-link">
+            <span>View on GitHub</span>
+            <svg class="link-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
         </div>
       </article>
     </div>
@@ -233,56 +222,93 @@ Software Developer | Java & Full-Stack Enthusiast
 
 
 
-<!-- INTERNSHIP -->
-<!-- INTERNSHIP -->
+<!-- EXPERIENCE & TRAINING TIMELINE -->
 <section id="internship" class="section alt-bg scroll-offset">
   <div class="container scroll-animate">
-    <h2 class="section-title">Internship & Training</h2>
+    <h2 class="section-title">Experience & Training</h2>
 
-    <div class="projects-grid">
+    <div class="timeline">
       
-      <!-- Internship Card -->
-      <article class="card project-card">
-        <div class="project-header">
-          <div class="project-icon">🏢</div>
-          <h3>SAP Intern — OSDA</h3>
+      <!-- SQL Developer Intern - Atlysbridge Solutions -->
+      <div class="timeline-item">
+        <div class="timeline-dot-wrapper">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
         </div>
-
-        <p class="muted">September 2025 – November 2025</p>
-
-        <p class="muted">
-          Gained hands-on exposure to SAP systems, enterprise workflows, and
-          business process integration. Successfully completed training with
-          certification.
-        </p>
-
-        <div class="meta">
-          <strong>Focus:</strong>
-          <span class="pill">SAP</span>
-          <span class="pill">Enterprise Systems</span>
+        <div class="timeline-date">May 2026 – Present</div>
+        <div class="timeline-content card">
+          <div class="timeline-header">
+            <div class="timeline-icon">🗄️</div>
+            <div>
+              <h3>SQL Developer Intern</h3>
+              <span class="timeline-company">Atlysbridge Solutions</span>
+            </div>
+          </div>
+          <p class="muted">
+            Designing and optimizing relational database schemas, writing complex and performant SQL queries, and assisting with data engineering pipelines to support backend applications.
+          </p>
+          <div class="meta">
+            <strong>Focus:</strong>
+            <span class="pill">SQL</span>
+            <span class="pill">Database Design</span>
+            <span class="pill">Query Optimization</span>
+          </div>
         </div>
-      </article>
+      </div>
 
-      <!-- Training Card -->
-      <article class="card project-card">
-        <div class="project-header">
-          <div class="project-icon">🤖</div>
-          <h3>GenAI Powered Data Analytics</h3>
+      <!-- SAP Intern - OSDA -->
+      <div class="timeline-item">
+        <div class="timeline-dot-wrapper">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
         </div>
-
-        <p class="muted">Forage Virtual Job Simulation | November 2025</p>
-
-        <p class="muted">
-          Completed real-world data analytics tasks using AI-assisted tools,
-          focusing on insights generation, data interpretation, and reporting.
-        </p>
-
-        <div class="meta">
-          <strong>Focus:</strong>
-          <span class="pill">Data Analytics</span>
-          <span class="pill">Generative AI</span>
+        <div class="timeline-date">Sept 2025 – Nov 2025</div>
+        <div class="timeline-content card">
+          <div class="timeline-header">
+            <div class="timeline-icon">🏢</div>
+            <div>
+              <h3>SAP Intern</h3>
+              <span class="timeline-company">OSDA</span>
+            </div>
+          </div>
+          <p class="muted">
+            Participated in specialized training in SAP ABAP and SAP Fiori application development, gaining hands-on exposure to SAP systems, enterprise workflows, and business process integration, resulting in becoming a certified SAP Associate.
+          </p>
+          <div class="meta">
+            <strong>Focus:</strong>
+            <span class="pill">SAP ABAP</span>
+            <span class="pill">SAP Fiori</span>
+            <span class="pill">Enterprise Systems</span>
+            <span class="pill">Certified SAP Associate</span>
+          </div>
         </div>
-      </article>
+      </div>
+
+      <!-- GenAI Powered Data Analytics -->
+      <div class="timeline-item">
+        <div class="timeline-dot-wrapper">
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-date">Nov 2025</div>
+        <div class="timeline-content card">
+          <div class="timeline-header">
+            <div class="timeline-icon">🤖</div>
+            <div>
+              <h3>GenAI Powered Data Analytics</h3>
+              <span class="timeline-company">Forage Virtual Job Simulation</span>
+            </div>
+          </div>
+          <p class="muted">
+            Completed real-world data analytics tasks using AI-assisted tools, focusing on insights generation, advanced data interpretation, and professional report building.
+          </p>
+          <div class="meta">
+            <strong>Focus:</strong>
+            <span class="pill">Data Analytics</span>
+            <span class="pill">Generative AI</span>
+            <span class="pill">Data Insights</span>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -299,17 +325,23 @@ Software Developer | Java & Full-Stack Enthusiast
         <h3>Get In Touch</h3>
         <p class="muted">Open to internships, projects, and collaborations.</p>
         <div class="contact-list">
-          <div class="contact-row"><span class="contact-icon">✉️</span><a href="mailto:psamikshya41@gmail.com">psamikshya41@gmail.com</a></div>
-          <div class="contact-row"><span class="contact-icon">📞</span><a href="tel:+919861249399">+91 98612 49399</a></div>
+          <div class="contact-row">
+            <span class="contact-icon">✉️</span>
+            <a href="mailto:psamikshya41@gmail.com" target="_blank" rel="noopener noreferrer">psamikshya41@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon">📞</span>
+            <a href="tel:+919861249399">+91 98612 49399</a>
+          </div>
         </div>
       </article>
 
       <article class="contact-card">
         <h3>Online Profiles</h3>
-        <a class="list-link" href="https://www.linkedin.com/in/samikshya-pattanaik-715b7b317/" target="_blank">
+        <a class="list-link" href="https://www.linkedin.com/in/samikshya-pattanaik-715b7b317/" target="_blank" rel="noopener noreferrer">
           <div class="list-mid"><div class="strong">LinkedIn</div><div class="small muted">Professional Profile</div></div>
         </a>
-        <a class="list-link" href="https://github.com/Samikshya981" target="_blank">
+        <a class="list-link" href="https://github.com/Samikshya981" target="_blank" rel="noopener noreferrer">
           <div class="list-mid"><div class="strong">GitHub</div><div class="small muted">Project Repositories</div></div>
         </a>
       </article>
@@ -324,9 +356,9 @@ Software Developer | Java & Full-Stack Enthusiast
     <p class="muted">MCA Student & Software Developer</p>
 
     <div class="socials">
-      <a href="mailto:psamikshya41@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/samikshya-pattanaik-715b76317/" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Samikshya981" target="_blank">GitHub</a>
+      <a href="mailto:psamikshya41@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a href="https://www.linkedin.com/in/samikshya-pattanaik-715b7b317/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Samikshya981" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
 
