@@ -542,59 +542,250 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-secondary);
 }
 
-/* ------------------------------
-   Technical Skills
------------------------------- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+/* ===============================
+   TECHNICAL SKILLS
+=================================*/
+
+.section-subtitle{
+    max-width:700px;
+    margin:15px auto 50px;
+    text-align:center;
+    color:var(--text-secondary);
+    font-size:1rem;
+    line-height:1.8;
 }
 
-.skill-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 32px 20px;
-  min-height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:26px;
 }
 
-.skill-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent-secondary);
-  box-shadow: 0 15px 35px rgba(6, 182, 212, 0.15);
+.skill-card{
+
+    background:rgba(20,28,45,.85);
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:34px 24px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    backdrop-filter:blur(14px);
+
+    min-height:290px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
 }
 
-.skill-icon {
-  font-size: 2.8rem;
-  line-height: 1;
-  margin-bottom: 12px;
-  transition: transform 0.3s ease;
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 18px 45px rgba(59,130,246,.18);
+
+}
+.skill-icon{
+
+    width:85px;
+    height:85px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:0 auto 22px;
+
+    border:2px solid rgba(59,130,246,.35);
+
+    transition:.35s;
+
+    font-size:3.4rem;
+
 }
 
-.skill-card:hover .skill-icon {
-  transform: scale(1.15) rotate(5deg);
+.skill-icon i{
+
+    font-size:3.4rem;
+
 }
 
-.skill-card h4 {
-  margin: 0 0 6px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-primary);
+.skill-icon img{
+
+    width:56px;
+
+    height:56px;
+
+    object-fit:contain;
+
 }
 
-.skill-card .muted {
-  margin: 0;
-  font-size: 0.88rem;
-  color: var(--text-secondary);
+.skill-card:hover .skill-icon{
+
+    transform:scale(1.12);
+
+    border-color:#3b82f6;
+
+}
+
+.skill-card:hover .skill-icon{
+
+    transform:scale(1.08) rotate(8deg);
+
+}
+
+.skill-card h4{
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.skill-card .muted{
+
+    color:#a5b4c7;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.devicon-github-original{
+    color:#ffffff;
+}
+
+.skill-footer{
+
+    margin-top:70px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:35px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:35px;
+
+}
+
+.footer-item{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:flex-start;
+
+}
+
+.footer-item span{
+
+    font-size:2rem;
+
+}
+
+.footer-item h5{
+
+    margin-bottom:8px;
+
+    color:#fff;
+
+    font-size:1rem;
+
+}
+
+.footer-item p{
+
+    color:var(--text-secondary);
+
+    font-size:.9rem;
+
+    line-height:1.6;
+
+}
+.web-icons,
+.tools-icons{
+
+    gap:8px;
+
+}
+
+.web-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+}
+
+.web-icons i{
+
+    font-size:1.8rem;
+
+}
+
+.tools-icons i{
+
+    font-size:2rem;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.skills-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.skill-footer{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.skill-footer{
+
+grid-template-columns:1fr;
+
+}
+
 }
 
 /* ------------------------------
