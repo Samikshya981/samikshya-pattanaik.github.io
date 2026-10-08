@@ -665,6 +665,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.emoji-icon {
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .devicon-github-original{
     color:#ffffff;
 }
